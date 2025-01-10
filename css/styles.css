@@ -117,6 +117,8 @@
 body {
   margin: 0;
   /* font-family: var(--bs-body-font-family); */
+  font-family: 'ZDSDISPLAY-COND';
+  font-family: 'ZDSDISPLAY-EXT';
   font-family: 'ZDSDISPLAY-REG';
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -126,6 +128,9 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; /* Smoothens the font */
+  -moz-osx-font-smoothing: grayscale; /* Optional: Improves rendering for macOS Firefox */
 }
 
 hr {
@@ -10979,19 +10984,23 @@ header.masthead {
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
-  font-style: italic;
   line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: 'ZDSDISPLAY-REG';
+  margin-bottom: 3rem;
+  font-family: 'ZDSDISPLAY-EXT';  
  
 }
 header.masthead .masthead-heading {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-family: 'ZDSDISPLAY-REG';
-  
+}
+
+header.masthead .masthead-para {
+  font-size: 1.75rem;
+  line-height:1.4;
+  font-family: 'ZDSDISPLAY-COND';
 }
 
 @media (min-width: 768px) {
@@ -11001,15 +11010,14 @@ header.masthead .masthead-heading {
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
-    font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     font-weight: 700;
     line-height: 4.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 }
 #portfolio .portfolio-item {
