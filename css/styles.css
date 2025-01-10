@@ -10986,7 +10986,7 @@ header.masthead .masthead-subheading {
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin-bottom: 3rem;
-  font-family: 'ZDSDISPLAY-EXT';  
+  font-family: 'ZDSDISPLAY-COND';
  
 }
 header.masthead .masthead-heading {
@@ -10998,9 +10998,8 @@ header.masthead .masthead-heading {
 }
 
 header.masthead .masthead-para {
-  font-size: 1.75rem;
-  line-height:1.4;
-  font-family: 'ZDSDISPLAY-COND';
+  font-size: 1.3rem;
+  font-family: 'ZDSDISPLAY-EXT';  
 }
 
 @media (min-width: 768px) {
